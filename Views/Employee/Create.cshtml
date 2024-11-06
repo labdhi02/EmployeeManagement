@@ -1,0 +1,27 @@
+﻿@model EmployeeManagementSystem.Models.Employee
+
+@{
+    ViewData["Title"] = "Add New Employee";
+}
+
+<h2>Add New Employee</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Role">Role</label>
+        <input type="text" id="Role" name="Role" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Salary">Salary</label>
+        <input type="number" id="Salary" name="Salary" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="Department">Department</label>
+        <input type="text" id="Department" name="Department" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

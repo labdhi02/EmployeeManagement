@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Inline CSS for styling -->
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+       
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribute content */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex: 1; /* Allow the center content to take available space */
+    }
+
+    h1 {
+        font-size: 48px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .btn-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    a.btn {
+        display: inline-block;
+        background-color: #007bff; /* Blue color */
+        color: #fff;
+        padding: 12px 25px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        a.btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+</style>
+
+<div class="container">
+    <!-- Welcome message -->
+    <h1>Welcome</h1>
+
+    <!-- Welcome Admin text below the Welcome message -->
+    <h6>Welcome Admin</h6>
+    <br />
+    <br />
+</div>
+
+<!-- Button section at the end of the page -->
+<div class="btn-container">
+    <a href="/Admin/Login" class="btn">Go to Admin Login</a>
+</div>

@@ -1,0 +1,35 @@
+/* wwwroot/css/styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+    color: #343a40;
+}
+header {
+    background-color: #003366; /* Dark blue color */
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.5em 0; /* Thin padding */
+    margin: 0; /* Remove any margin */
+}
+
+/* Footer styling */
+footer {
+    background-color: #003366; /* Dark blue color */
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.5em 0; /* Thin padding */
+    margin: 0; /* Remove any margin */
+    /* Layout styling */
+    
+
+

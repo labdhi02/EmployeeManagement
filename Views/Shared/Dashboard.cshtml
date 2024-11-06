@@ -1,0 +1,31 @@
+﻿@model IEnumerable<EmployeeManagementSystem.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee Dashboard";
+}
+
+<h2>Employee Dashboard</h2>
+
+<a href="@Url.Action("Create", "Employee")" class="btn btn-success">Add New Employee</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Name</td>
+                <td>@employee.Role</td>
+                <td>@employee.Salary</td>
+                <td>@employee.Department</td>
+            </tr>
+        }
+    </tbody>
+</table>
